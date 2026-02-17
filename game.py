@@ -542,7 +542,7 @@ class Game:
                     self.transition += 1
                     if self.transition > 30:
                         self.hascheckpoint = 0
-                        self.level = min(self.level + 1, len(os.listdir('data/maps')) - 2)
+                        self.level = min(self.level + 1, len(os.listdir('data/maps')) - 1)
                         if self.level >= 3:
                             self.player.dashjump = 1
                         else:
